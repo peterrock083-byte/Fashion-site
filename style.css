@@ -1,0 +1,78 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:"Segoe UI", sans-serif;}
+body {background:#0b0b0b; color:#eee; scroll-behavior:smooth;}
+
+/* HEADER */
+.top-bar {
+  position: sticky; top:0; z-index:1000;
+  display:flex; justify-content:space-between; align-items:center;
+  padding:18px 50px; background:#000;
+  box-shadow:0 4px 20px rgba(0,0,0,0.6);
+}
+.logo{width:90px;}
+.socials a{color:#c9a24d; margin-left:20px; text-decoration:none; font-weight:600;}
+
+/* BRAND */
+.brand-section {text-align:center; padding:70px 20px 40px;}
+.brand-section h1{font-size:3rem; letter-spacing:2px;}
+.brand-section p{max-width:800px; margin:15px auto; color:#aaa; line-height:1.8;}
+
+/* HERO */
+.hero-img {width:100%; height:75vh; object-fit:cover; object-position:top center;}
+
+/* PRODUCTS */
+.products {padding:80px 30px;}
+.products h2{text-align:center; font-size:2.4rem; margin-bottom:20px; letter-spacing:2px;}
+
+/* FILTERS */
+.filters{text-align:center; margin-bottom:40px;}
+.filters button{background:transparent; border:1px solid #c9a24d; color:#c9a24d; padding:8px 18px; margin:5px; border-radius:20px; cursor:pointer;}
+.filters button.active, .filters button:hover{background:#c9a24d; color:#000;}
+
+/* GRID */
+.product-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:30px;}
+
+/* CARD */
+.card {background:#111; border-radius:18px; overflow:hidden; box-shadow:0 20px 40px rgba(0,0,0,0.6); transition:transform 0.4s, box-shadow 0.4s;}
+.card:hover {transform:translateY(-12px); box-shadow:0 30px 60px rgba(201,162,77,0.3);}
+.card img{width:100%; height:300px; object-fit:cover;}
+.card h3{margin:12px; font-size:1.2rem;}
+.card p{margin:0 12px; color:#c9a24d;}
+.tap{display:block; margin:12px; color:#888; font-size:0.9rem;}
+.card-link{text-decoration:none; color:inherit;}
+
+/* ANIMATION */
+.fade{animation:fadeIn 1.2s ease forwards;}
+@keyframes fadeIn {from {opacity:0; transform:translateY(30px);} to {opacity:1; transform:translateY(0);}}
+
+/* WHY */
+.why{padding:80px 30px; background:#0f0f0f; text-align:center;}
+.why h2{font-size:2.3rem; margin-bottom:40px;}
+.why-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:25px;}
+.why-box{background:#111; padding:30px; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.6);}
+.why-box h3{color:#c9a24d; margin-bottom:10px;}
+
+/* CTA */
+.cta{padding:90px 20px; text-align:center; background:linear-gradient(135deg,#000,#1a1a1a);}
+.cta h2{font-size:2.5rem; margin-bottom:15px;}
+.cta p{color:#aaa; margin-bottom:25px;}
+.cta-btn{display:inline-block; padding:14px 40px; border-radius:30px; background:#c9a24d; color:#000; text-decoration:none; font-weight:bold; transition:0.3s;}
+.cta-btn:hover{opacity:0.8;}
+
+/* FOOTER */
+.footer{background:#000; color:#ccc; padding:50px 20px; text-align:center; border-top:2px solid #c9a24d;}
+.footer-container{max-width:1100px; margin:0 auto;}
+.footer-logo{width:80px; margin-bottom:10px;}
+.footer-slogan{color:#aaa; margin-bottom:20px; font-style:italic;}
+.footer-links{margin:20px 0;}
+.footer-links a{color:#c9a24d; margin:0 12px; text-decoration:none; font-weight:600;}
+.footer-links a:hover{opacity:0.8;}
+.footer-socials a{color:#c9a24d; margin:0 10px; text-decoration:none; font-weight:600;}
+.footer-socials a:hover{opacity:0.8;}
+.footer p{margin:10px 0 0; font-size:0.95rem; color:#aaa;}
+
+/* MOBILE */
+@media(max-width:768px){
+  .top-bar{padding:15px 20px;}
+  .brand-section h1{font-size:2.2rem;}
+  .hero-img{height:45vh;}
+}
